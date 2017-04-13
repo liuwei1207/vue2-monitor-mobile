@@ -23,7 +23,7 @@ export default {
                 // 地图 js
                 vid: 'amap-vue',
                 zoom: 13,
-                mapStyle: 'dark',
+                mapStyle: 'fresh',
                 events: {
                     // 地图平移结束后触发
                     'moveend': () => {
@@ -57,7 +57,7 @@ export default {
             }
         },
         computed: {
-            // 绑定vuex中的地图属性
+            // vuex中的地图属性
             markers: function() {
                 return this.$store.state.mapMarkers;
             },
@@ -72,12 +72,11 @@ export default {
             // GET /someUrl
             this.$http.post('http://123.57.215.156:8050/api/maps/getAllSiteInfo').then(response => {
                 // ajax 获取数据并处理
-                //
+                // 
                 // 设置站点的初始信息窗口
                 let defaultCenter = [parseFloat(response.body[0].OHLongitude), parseFloat(response.body[0].OHLatitude)];
                 let defaultPosition = [parseFloat(response.body[0].OHLongitude), parseFloat(response.body[0].OHLatitude)];
                 let defaultContent = response.body[0].SiteName;
-                //刚开始构建好便更新视图中心
                 this.$store.commit('UPDATE_WINDOWS', {
                     position: defaultPosition,
                     content: defaultContent
@@ -146,6 +145,6 @@ export default {
         }
 }
 </script>
-<style>
-    
+<style type="text/css">
+
 </style>

@@ -256,9 +256,6 @@ export default {
 }
 </script>
 <style type="text/css">
-/**
- * 彩条相关样式
- */
 .m-meter {
     position: fixed;
     left: auto;
@@ -268,7 +265,7 @@ export default {
     height: 58px;
     bottom: 58px;
     z-index: 999;
-    background: rgba(0, 0, 0, 0.80);
+    background: rgba(255,255,255,.8);
 }
 
 .m-inner-warpp {
@@ -283,7 +280,7 @@ export default {
     float: left;
     width: 20px;
     font-size: 12px;
-    color: #ffffff;
+    color: #ff4181;
 }
 
 .m-meter-canvas {
@@ -323,7 +320,7 @@ export default {
     top: 0px;
     left: 9px;
     font-size: 8px;
-    color: #ffffff;
+    color: #ff4181;
 }
 
 .clearfix:after {

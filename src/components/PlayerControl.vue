@@ -72,19 +72,18 @@ export default {
 }
 </script>
 <style>
-/**
- * 播放器
- */
 .m-playbar {
     position: fixed;
+    left: auto;
+    right: auto;
     display: inline-block;
     width: 100%;
     height: 58px;
     bottom: 0px;
     z-index: 999;
-        left: -2px;
+    background: rgba(232, 232, 232, .84);
 }
-/*播放器按钮宽度*/
+
 .sm2-bar-ui .sm2-inline-element,
 .sm2-bar-ui .sm2-button-element .sm2-button-bd {
     min-width: 3.5em !important;
@@ -98,15 +97,15 @@ export default {
 .sm2-bar-ui > .bd {
     height: inherit;
 }
-/*播放器背景宽度*/
+
 .sm2-bar-ui .bd .sm2-button-element {
-    background-color: #000000 !important;
+    background-color: rgb(65,192,209) !important;
 }
 .sm2-bar-ui .sm2-inline-button {
-    background-color: #000000 !important;
+    background-color: rgb(65,192,209) !important;
 }
 .sm2-bar-ui .sm2-inline-status {
-    background-color: #000000 !important;
+    background-color: rgb(65,192,209) !important;
 }
 .sm2-progress .sm2-progress-track {
     background-color: #ffffff !important;

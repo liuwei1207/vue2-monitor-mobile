@@ -1,13 +1,13 @@
 <template>
     <div class="out-warpper">
-        <Site-Nav></Site-Nav>
+        <BottomNav></BottomNav>
         <keep-alive>
             <router-view></router-view>
         </keep-alive>
     </div>
 </template>
 <script type="text/javascript">
-import SiteNav from './common/SiteNav.vue';
+import BottomNav from './common/BottomNav.vue';
 export default {
     data() {
             return {
@@ -15,7 +15,7 @@ export default {
             }
         },
         components: {
-            SiteNav
+            BottomNav
         }
 }
 </script>

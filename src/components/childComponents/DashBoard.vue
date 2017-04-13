@@ -2,7 +2,7 @@
     <div class="m-dashboard">
         <div class="m-dashboard-text">
             场强：<span>{{FMReviceRSSI}}</span>dBuV
-            信噪比：<span>{{FMReviceSNR}}</span>dB
+            &nbsp;信噪比：<span>{{FMReviceSNR}}</span>dB
         </div>
     </div>
 </template>
@@ -23,9 +23,6 @@ export default {
 }
 </script>
 <style>
-/**
- * 场强信噪比样式设置
- */
 .m-dashboard {
     display: inline-block;
     position: fixed;
@@ -33,12 +30,11 @@ export default {
     bottom: 116px;
     right: 0;
     z-index: 1000;
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.80);
+    color: #ff4181;
+    background: rgba(255, 255, 255, .8);
     padding: 0 14px;
     height: 46px;
-    font-size: 15px;
-    /*下话的凹陷样式分割线*/
+    font-size: 14px;
     box-shadow: inset 0 -1px 0 rgba( 255, 255, 250, 0.6), inset 0 -2px 0 rgba( 0, 0, 0, 0.1);
 }
 
@@ -50,7 +46,7 @@ export default {
 
 .m-dashboard span {
     display: inline-block;
-    width: 10%;
+    width: 8%;
     height: 46px;
     line-height: 46px;
 }

@@ -41,32 +41,8 @@ export default {
 }
 </script>
 <style>
-/**
- * 地图部件左侧放大缩小的相关样式
- */
-.amap-zoom-touch-minus, .amap-zoom-touch-plus {
-    margin-bottom: 0;
-    background: rgba(0, 0, 0, 0.80);
-    height: 48px;
-}
-.amap-zoom-touch-minus>div, .amap-zoom-touch-plus>div {
-    line-height: 48px
-}
-/**
- * 地图图标上的content的样式
- */
-.amap-info-content {
-    border-radius: 23px;
-    padding: 8px 10px 8px 8px;
-}
 
-
-.amap-container img {
-    max-width: 28px !important;
-
-}
-
-/*popup组件API，这个版本中已去掉*/
+/*popup组件API*/
 
 .demo-popup-top {
     width: 100%;
@@ -95,7 +71,7 @@ export default {
     display: none;
 }
 
-/*popup组件中圆圈样式*/
+/*顶部下拉框中圆圈样式*/
 
 .mu-circular-progress {
     /*overflow: visible;*/
